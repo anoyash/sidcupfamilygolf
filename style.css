@@ -2,7 +2,7 @@
   margin: 0%;
   padding: 0%;
   color: white;
-  font-family: Montserrat, sans-serif;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 html,
@@ -39,34 +39,52 @@ video {
   object-fit: cover;
   /* object-fir : cover ; this style is applied , so that video can be take full website  */
   position: fixed;
+  z-index: -1;
 }
 
 #main {
   position: relative;
   background-color: rgba(0, 0, 0, 0.35);
-  display: flex;
-  flex-direction: column;
-  text-align: center;
 }
 
 #page1 {
+  position: relative;
   height: 100vh;
   width: 100%;
-  padding-top: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
-#page1_line1 {
-  font-size: 80px;
-  font-weight: bold;
+/* justify-content and align-items works in display flex property only */
+
+#page1 h1{
+  font-size: 90px;
+  font-weight: 800;
+  position: relative;
 }
 
-#page1_line1 ::before {
-  content: 'EAT. DRINK. PLAY.';
-  background-color: red;
+#page1 h1::before{
+  content: "EAT. DRINK. PLAY.";
+  color: black; 
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  font-size: 90px;
+  font-weight: 800;
+  -webkit-text-stroke: 1px #95c11e;
+  z-index: -1;
 }
 
-#page1_line2 {
-  font-weight: bold;
-  margin-top: 1.5%;
-  margin-bottom: 1.5%;
+#page1 h2{
+  font-size: 20px;
+  font-weight: 700;
+  padding: 1% 1%;
+}
+
+#page1 p{
+  font-size: 18px;
+  font-weight: 500;
 }
