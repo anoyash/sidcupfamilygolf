@@ -44,9 +44,29 @@ video {
 #main {
   position: relative;
   background-color: rgba(0, 0, 0, 0.35);
+  display: flex;
+  flex-direction: column;
+  text-align: center;
 }
 
 #page1 {
   height: 100vh;
   width: 100%;
+  padding-top: 20%;
+}
+
+#page1_line1 {
+  font-size: 80px;
+  font-weight: bold;
+}
+
+#page1_line1 ::before {
+  content: 'EAT. DRINK. PLAY.';
+  background-color: red;
+}
+
+#page1_line2 {
+  font-weight: bold;
+  margin-top: 1.5%;
+  margin-bottom: 1.5%;
 }
