@@ -11,6 +11,25 @@ body {
   height: 100%;
 }
 
+/* #cursor {
+  background-color:#95c11e;
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  position: fixed;
+  z-index: 99;
+} */
+
+#cursor-blur {
+  background-color:#95c11e;
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  position: fixed;
+  filter: blur(100px);
+  z-index: 9;
+}
+
 #nav {
   display: flex;
   position: fixed;
