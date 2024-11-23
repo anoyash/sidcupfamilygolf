@@ -2,7 +2,7 @@
   margin: 0%;
   padding: 0%;
   color: white;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
 html,
@@ -37,9 +37,9 @@ video {
   height: 100%;
   width: 100%;
   object-fit: cover;
-  /* object-fir : cover ; this style is applied , so that video can be take full website  */
+  /* object-fit : cover ; this style is applied , so that video can be take full website  */
   position: fixed;
-  z-index: -1;
+  z-index: -2;
 }
 
 #main {
@@ -60,31 +60,36 @@ video {
 
 /* justify-content and align-items works in display flex property only */
 
-#page1 h1{
+#page1 h1 {
   font-size: 90px;
   font-weight: 800;
   position: relative;
 }
 
-#page1 h1::before{
+#page1 h1::before {
   content: "EAT. DRINK. PLAY.";
-  color: black; 
+  color: black;
   position: absolute;
-  top: -5px;
-  left: -5px;
+  top: -6px;
+  left: -6px;
   font-size: 90px;
   font-weight: 800;
   -webkit-text-stroke: 1px #95c11e;
-  z-index: -1;
+  z-index: -2;
 }
 
-#page1 h2{
+#page1 h2 {
   font-size: 20px;
   font-weight: 700;
   padding: 1% 1%;
 }
 
-#page1 p{
+#page1 p {
   font-size: 18px;
   font-weight: 500;
+}
+
+#page2 {
+  height: 100vh;
+  width: 100%;
 }
