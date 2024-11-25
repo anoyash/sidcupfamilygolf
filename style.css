@@ -118,6 +118,7 @@ video {
   display: inline-block;
   white-space: nowrap;
   overflow-x: auto;
+  overflow-y: hidden;
   animation-name: scroll;
   animation-duration: 40s;
   animation-timing-function: linear;
@@ -179,7 +180,7 @@ video {
   font-size: 20px;
 }
 
-#page2 img {
+.aboutusimg {
   height: 80%;
   width: 20%;
   border-radius: 2%;
@@ -196,11 +197,12 @@ video {
 }
 
 .card {
-  background-color: red;
+  position: relative;
+  display: flex;
+  justify-content: center;
 }
 
-.card img {
-  height: 100px;
-  width: 100px;
-  object-fit: cover;
+.card img{
+  height: 350px;
+  width: 350px;
 }
