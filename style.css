@@ -21,7 +21,7 @@ body {
 } */
 
 #cursor-blur {
-  background-color:#95c11e;
+  background-color: #95c11e;
   height: 200px;
   width: 200px;
   border-radius: 50%;
@@ -111,4 +111,45 @@ video {
 #page2 {
   height: 100vh;
   width: 100%;
+}
+
+#scroller {
+  display: inline-block;
+  white-space: nowrap;
+  overflow-x: auto;
+  overflow-y: hidden;
+  animation-name: scroll;
+  animation-duration: 40s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  position: relative;
+  z-index: 9;
+}
+
+#scroller h4 {
+  display: inline-block;
+  white-space: nowrap;
+}
+
+#scroller-in h4 {
+  display: inline-block;
+  font-size: 80px;
+  font-weight: 700;
+  margin-right: 10px;
+  color: transparent;
+  transition: all linear 0.5s;
+  -webkit-text-stroke: 2px white;
+}
+
+#scroller-in h4:hover{
+  color: #95c11e;
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
 }
