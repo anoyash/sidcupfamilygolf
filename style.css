@@ -22,8 +22,8 @@ body {
 
 #cursor-blur {
   background-color: #95c11e;
-  height: 200px;
-  width: 200px;
+  height: 300px;
+  width: 300px;
   border-radius: 50%;
   position: fixed;
   filter: blur(100px);
@@ -254,4 +254,39 @@ video {
 
 .card:hover {
   transform: rotate3d(-1, 1, 0, 20deg);
+}
+
+#green-div{
+  height: 40vh;
+  width: 100%;
+  margin-top: 3%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  background-color: #95c11e;
+  position: relative;
+}
+
+#green-div h4{
+  font-size: 40px;
+  color: #000;
+  text-transform: uppercase;
+}
+
+#green-div img{
+  height: 100%;
+  width: 20%;
+  object-fit: cover;
+}
+
+#green-div-img-1{
+  transform: scaleX(-1);
+  position: relative;
+  right: 10%;
+}
+
+#green-div-img-2{
+  position: relative;
+  right: -10%
 }
