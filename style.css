@@ -80,7 +80,7 @@ video {
 /* justify-content and align-items works in display flex property only */
 
 #page1 h1 {
-  font-size: 90px;
+  font-size: 100px;
   font-weight: 800;
   position: relative;
 }
@@ -91,7 +91,7 @@ video {
   position: absolute;
   top: -6px;
   left: -6px;
-  font-size: 90px;
+  font-size: 100px;
   font-weight: 800;
   -webkit-text-stroke: 1px #95c11e;
   z-index: -2;
@@ -109,13 +109,12 @@ video {
 }
 
 #page2 {
-  height: 100vh;
+  min-height: 100vh; /* under stand this difference between height vs min-heinght */
   width: 100%;
   position: relative;
 }
 
 #scroller {
-  display: inline-block;
   white-space: nowrap;
   overflow-x: auto;
   overflow-y: hidden;
@@ -124,7 +123,11 @@ video {
   animation-timing-function: linear;
   animation-iteration-count: infinite;
   position: relative;
-  z-index: 9;
+  z-index: 10;
+}
+
+#scroller::-webkit-scrollbar {
+  display: none;
 }
 
 #scroller h4 {
@@ -161,7 +164,7 @@ video {
   position: relative;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 #aboutus div {
@@ -190,19 +193,65 @@ video {
 
 #cards-container {
   height: 60vh;
+  display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
-  display: flex;
+  gap: 5%;
 }
 
 .card {
+  height: 80%;
+  width: 24%;
+  border-radius: 5%;
+  background-size: cover;
+  background-position: center;
   position: relative;
-  display: flex;
-  justify-content: center;
+  overflow: hidden;
+  z-index: 10;
+  transition: all ease 0.6s;
 }
 
-.card img{
-  height: 350px;
-  width: 350px;
+#card-1 {
+  background-image: url("https://eiwgew27fhz.exactdn.com/wp-content/uploads/2023/02/home-toptracer-1024x682.jpg?strip=all&lossy=1&sharp=1&ssl=1");
+}
+
+#card-2 {
+  background-image: url("https://eiwgew27fhz.exactdn.com/wp-content/uploads/2023/02/hero-4-1024x1024.jpg?strip=all&lossy=1&sharp=1&ssl=1");
+}
+
+#card-3 {
+  background-image: url("https://eiwgew27fhz.exactdn.com/wp-content/uploads/2023/02/home-lessons-1024x682.jpg?strip=all&lossy=1&sharp=1&ssl=1");
+}
+
+.overlay {
+  height: 100%;
+  width: 100%;
+  background-color: #95c11e;
+  padding-top: 160px;
+  position: relative;
+  z-index: 10;
+  opacity: 0;
+  transition: all ease 0.6s; /* making the animation smooth*/
+}
+
+.overlay h4 {
+  color: #000;
+  font-size: 30px;
+  font-weight: 700;
+  padding-bottom: 10px;
+}
+
+.overlay p {
+  font-size: 20px;
+  font-weight: 350;
+  color: #000;
+}
+
+.card:hover .overlay {
+  opacity: 1;
+}
+
+.card:hover {
+  transform: rotate3d(-1, 1, 0, 20deg);
 }
