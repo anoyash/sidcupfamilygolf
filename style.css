@@ -116,10 +116,10 @@ video {
 
 #scroller {
   white-space: nowrap;
-  overflow-x: auto;
+  overflow-x: hidden;
   overflow-y: hidden;
   animation-name: scroll;
-  animation-duration: 40s;
+  animation-duration: 20s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
   position: relative;
@@ -136,7 +136,6 @@ video {
 }
 
 #scroller-in h4 {
-  display: inline-block;
   font-size: 100px;
   font-weight: 700;
   margin-right: 10px;
@@ -256,7 +255,7 @@ video {
   transform: rotate3d(-1, 1, 0, 20deg);
 }
 
-#green-div{
+#green-div {
   height: 40vh;
   width: 100%;
   margin-top: 3%;
@@ -268,25 +267,25 @@ video {
   position: relative;
 }
 
-#green-div h4{
+#green-div h4 {
   font-size: 40px;
   color: #000;
   text-transform: uppercase;
 }
 
-#green-div img{
+#green-div img {
   height: 100%;
   width: 20%;
   object-fit: cover;
 }
 
-#green-div-img-1{
+#green-div-img-1 {
   transform: scaleX(-1);
   position: relative;
   right: 10%;
 }
 
-#green-div-img-2{
+#green-div-img-2 {
   position: relative;
-  right: -10%
+  right: -10%;
 }
