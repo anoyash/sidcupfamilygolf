@@ -83,9 +83,9 @@ gsap.from("#aboutus img,#aboutustext", {
 });
 
 gsap.from(".card", {
-  scale: 0.8,
+  scale: 0.7,
   duration: 1,
-  stagger:0.1,
+  stagger: 0.1,
   scrollTrigger: {
     trigger: "#cards-container",
     scroller: "body",
@@ -95,6 +95,29 @@ gsap.from(".card", {
   },
 });
 
-gsap.from("",{
-  
-})
+gsap.from("#colon1", {
+  x: 50,
+  y: 50,
+  duration: 1,
+  scrollTrigger: {
+    trigger: "#colon1",
+    scroller: "body",
+    start: "top 55%",
+    end: "top 45%",
+    scrub: 4,
+  },
+});
+
+gsap.from("#colon2", {
+  x: -50,
+  y: -50,
+  duration: 1,
+  scrollTrigger: {
+    trigger: "#colon1",
+    scroller: "body",
+    markers: true,
+    start: "top 55%",
+    end: "top 45%",
+    scrub: 4,
+  },
+});
