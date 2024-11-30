@@ -333,17 +333,16 @@ video {
 }
 
 #page4 {
-  height: 30vh;
+  height: 40vh;
   width: 100%;
   background-color: #000;
-  display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
 }
 
 #footer-container {
-  height: 30vh;
+  height: 40vh;
   width: 100%;
   margin-top: 3%;
   display: flex;
@@ -360,12 +359,13 @@ video {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  left: 10%;
+  gap: 100px;
+  left: 8%;
 }
 
 #footer-content img {
-  height: 15%;
-  width: 15%;
+  height: 10%;
+  width: 12%;
 }
 
 #footer-content-list1 {
@@ -374,6 +374,7 @@ video {
 
 #footer-content-list1 h4 {
   font-size: 25px;
+  line-height: 40px;
   color: #000;
 }
 
@@ -383,14 +384,41 @@ video {
 
 #footer-content-list2 h4 {
   font-size: 25px;
+  line-height: 40px;
   color: #000;
 }
 
-#footer-content-list2 {
+#footer-content-address {
   text-align: left;
 }
 
-#footer-content-list2 h4 {
-  font-size: 25px;
+#footer-content-address h3 {
+  font-size: 20px;
   color: #000;
+}
+
+#contact-number {
+  display: flex;
+  font-weight: 550;
+}
+
+#contact-number p {
+  color: #000;
+}
+
+#footer-content-address h4 {
+  font-size: 30px;
+  color: #000;
+}
+
+#copyrighttext {
+  position: absolute;
+  bottom: 4%;
+  left: 8%;
+}
+
+#copyrighttext p {
+  color: #000;
+  font-size: 20px;
+  font-weight: 400;
 }
