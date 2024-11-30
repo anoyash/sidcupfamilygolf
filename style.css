@@ -11,14 +11,14 @@ body {
   height: 100%;
 }
 
-/* #cursor {
+#cursor {
   background-color:#95c11e;
   height: 25px;
   width: 25px;
   border-radius: 50%;
   position: fixed;
   z-index: 99;
-} */
+}
 
 #cursor-blur {
   background-color: #95c11e;
@@ -26,7 +26,7 @@ body {
   width: 300px;
   border-radius: 50%;
   position: fixed;
-  filter: blur(100px);
+  filter: blur(150px);
   z-index: 9;
 }
 
@@ -77,10 +77,10 @@ video {
   text-align: center;
 }
 
-/* justify-content and align-items works in display flex property only */
+/* justify-content and align-items works with display flex property only */
 
 #page1 h1 {
-  font-size: 100px;
+  font-size: 120px;
   font-weight: 800;
   position: relative;
 }
@@ -91,21 +91,21 @@ video {
   position: absolute;
   top: -6px;
   left: -6px;
-  font-size: 100px;
+  font-size: 120px;
   font-weight: 800;
   -webkit-text-stroke: 1px #95c11e;
   z-index: -2;
 }
 
 #page1 h2 {
-  font-size: 20px;
-  font-weight: 700;
+  font-size: 30px;
+  font-weight: 600;
   padding: 1% 1%;
 }
 
 #page1 p {
-  font-size: 18px;
-  font-weight: 500;
+  font-size: 19px;
+  font-weight: 400;
 }
 
 #page2 {
@@ -263,7 +263,7 @@ video {
   justify-content: space-between;
   align-items: center;
   text-align: center;
-  background-color: #95c11e;
+  background: linear-gradient(to left bottom, yellow, #ace022);
   position: relative;
   overflow: hidden;
 }
@@ -289,4 +289,37 @@ video {
 #green-div-img-2 {
   position: relative;
   right: -9%;
+}
+
+#page3 {
+  height: 100vh;
+  width: 100%;
+  background-color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+#page3 > p {
+  width: 50%;
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 35px;
+  text-align: center;
+}
+
+#colon1 {
+  height: 60px;
+  position: absolute;
+  left: 15%;
+  top: 20%;
+}
+
+#colon2 {
+  height: 60px;
+  position: absolute;
+  right: 20%;
+  bottom: 20%;
+  transform: rotate(180deg);
 }

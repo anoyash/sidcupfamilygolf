@@ -1,13 +1,27 @@
-console.log("Initiating gsap");
+console.log(" *** Initiating gsap *** ");
 
-//var cursor = document.querySelector("#cursor");
+var cursor = document.querySelector("#cursor");
 var cursorBlur = document.querySelector("#cursor-blur");
+var navOptions = document.querySelectorAll("#nav h4");
 
 document.addEventListener("mousemove", (dets) => {
-//   cursor.style.left = dets.x + "px";
-//   cursor.style.top = dets.y + "px";
+  cursor.style.left = dets.x + 30 + "px";
+  cursor.style.top = dets.y + "px";
   cursorBlur.style.left = dets.x - 100 + "px";
   cursorBlur.style.top = dets.y - 100 + "px";
+});
+
+navOptions.forEach((element) => {
+  element.addEventListener("mouseenter", () => {
+    cursor.style.scale = 3;
+    cursor.style.border = "1px solid white";
+    cursor.style.backgroundColor = "transparent";
+  });
+  element.addEventListener("mouseleave", () => {
+    cursor.style.scale = 1;
+    cursor.style.border = "0px solid white";
+    cursor.style.backgroundColor = "#95c11e";
+  });
 });
 
 // I have added this event listener because
@@ -54,3 +68,33 @@ gsap.to("#main", {
     scrub: 2,
   },
 });
+
+gsap.from("#aboutus img,#aboutustext", {
+  y: 90,
+  opacity: 0,
+  duration: 1,
+  scrollTrigger: {
+    trigger: "#aboutus",
+    scroller: "body",
+    start: "top 65%",
+    end: "top 70%",
+    scrub: 1,
+  },
+});
+
+gsap.from(".card", {
+  scale: 0.8,
+  duration: 1,
+  stagger:0.1,
+  scrollTrigger: {
+    trigger: "#cards-container",
+    scroller: "body",
+    start: "top 70%",
+    end: "top 65%",
+    scrub: 1,
+  },
+});
+
+gsap.from("",{
+  
+})
