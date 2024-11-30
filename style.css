@@ -12,7 +12,7 @@ body {
 }
 
 #cursor {
-  background-color:#95c11e;
+  background-color: #95c11e;
   height: 25px;
   width: 25px;
   border-radius: 50%;
@@ -44,6 +44,7 @@ body {
 #nav h4 {
   text-transform: uppercase;
   color: white;
+  font-family: "Montserrat", sans-serif;
 }
 
 #nav img {
@@ -80,8 +81,8 @@ video {
 /* justify-content and align-items works with display flex property only */
 
 #page1 h1 {
-  font-size: 120px;
-  font-weight: 800;
+  font-size: 150px;
+  font-weight: 700;
   position: relative;
 }
 
@@ -89,10 +90,10 @@ video {
   content: "EAT. DRINK. PLAY.";
   color: black;
   position: absolute;
-  top: -6px;
-  left: -6px;
-  font-size: 120px;
-  font-weight: 800;
+  top: -5px;
+  left: -5px;
+  font-size: 150px;
+  font-weight: 700;
   -webkit-text-stroke: 1px #95c11e;
   z-index: -2;
 }
@@ -101,11 +102,13 @@ video {
   font-size: 30px;
   font-weight: 600;
   padding: 1% 1%;
+  font-family: "Montserrat", sans-serif;
 }
 
 #page1 p {
   font-size: 19px;
   font-weight: 400;
+  font-family: "Montserrat", sans-serif;
 }
 
 #page2 {
@@ -175,11 +178,15 @@ video {
 #aboutustext h3 {
   margin-bottom: 5%;
   font-size: 40px;
+  font-weight: 700;
   text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
 }
 
 #aboutustext p {
   font-size: 20px;
+  font-weight: 700;
+  font-family: "Montserrat", sans-serif;
 }
 
 .aboutusimg {
@@ -274,19 +281,20 @@ video {
   text-transform: uppercase;
 }
 
-#green-div img {
+#green-div img,
+#footer-container img {
   height: 100%;
   width: 18%;
   object-fit: cover;
 }
 
-#green-div-img-1 {
+.green-div-img-1 {
   transform: scaleX(-1);
   position: relative;
   right: 9%;
 }
 
-#green-div-img-2 {
+.green-div-img-2 {
   position: relative;
   right: -9%;
 }
@@ -322,4 +330,67 @@ video {
   right: 20%;
   bottom: 20%;
   transform: rotate(180deg);
+}
+
+#page4 {
+  height: 30vh;
+  width: 100%;
+  background-color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+#footer-container {
+  height: 30vh;
+  width: 100%;
+  margin-top: 3%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  background: linear-gradient(to left bottom, yellow, #ace022);
+  position: relative;
+  overflow: hidden;
+}
+
+#footer-content {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  left: 10%;
+}
+
+#footer-content img {
+  height: 15%;
+  width: 15%;
+}
+
+#footer-content-list1 {
+  text-align: left;
+}
+
+#footer-content-list1 h4 {
+  font-size: 25px;
+  color: #000;
+}
+
+#footer-content-list2 {
+  text-align: left;
+}
+
+#footer-content-list2 h4 {
+  font-size: 25px;
+  color: #000;
+}
+
+#footer-content-list2 {
+  text-align: left;
+}
+
+#footer-content-list2 h4 {
+  font-size: 25px;
+  color: #000;
 }
