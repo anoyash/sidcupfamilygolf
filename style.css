@@ -345,26 +345,51 @@ video {
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
 }
 
-#elem1,
-#elem2,
-#elem3 {
+#elem::before {
+  content: "WHAT ARE YOU WAITING FOR ?";
+  color: black;
+  position: absolute;
+  font-size: 100px;
+  font-weight: 750;
+  top: -40%;
+  -webkit-text-stroke: 2px white;
+}
+
+.elems {
   height: 100%;
   width: 28%;
-  text-align: center;
-  align-content: center;
   margin: 1%;
   border-radius: 10px;
-  background: linear-gradient(to left bottom, #2da438, #ace022);
+  position: relative;
 }
 
-#elem1 h2,
-#elem2 h2,
-#elem3 h2 {
+.elems h2 {
+  height: 100%;
+  width: 100%;
   color: #000;
+  align-content: center;
+  text-align: center;
   font-size: 30px;
-  font-weight: 750;
+  font-weight: 700;
+  border-radius: 10px;
+  background: linear-gradient(to left bottom, #2da438, #ace022);
+  position: absolute;
+  z-index: 100; 
+}
+
+.elems:hover h2 {
+  color: #fff;
+  background: transparent;
+}
+
+.elems img {
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+  object-fit: cover;
 }
 
 #footer-container {
