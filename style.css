@@ -17,7 +17,7 @@ body {
   width: 25px;
   border-radius: 50%;
   position: fixed;
-  z-index: 99;
+  z-index: 9;
 }
 
 #cursor-blur {
@@ -377,7 +377,7 @@ video {
   border-radius: 10px;
   background: linear-gradient(to left bottom, #2da438, #ace022);
   position: absolute;
-  z-index: 100; 
+  z-index: 9;
 }
 
 .elems:hover h2 {

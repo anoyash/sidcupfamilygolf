@@ -3,6 +3,7 @@ console.log(" *** Initiating gsap *** ");
 var cursor = document.querySelector("#cursor");
 var cursorBlur = document.querySelector("#cursor-blur");
 var navOptions = document.querySelectorAll("#nav h4");
+var elementBefore = CSSRulePlugin.getRule("#elem::before");
 
 document.addEventListener("mousemove", (dets) => {
   cursor.style.left = dets.x + 30 + "px";
@@ -118,5 +119,19 @@ gsap.from("#colon2", {
     start: "top 55%",
     end: "top 45%",
     scrub: 4,
+  },
+});
+
+gsap.from(elementBefore, {
+  cssRule: {
+    top: "-30%",
+  },
+  duration: 1,
+  scrollTrigger: {
+    trigger: "#elem",
+    scroller: "body",
+    start: "top 45%",
+    end: "top 35%",
+    scrub: 1,
   },
 });
