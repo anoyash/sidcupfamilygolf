@@ -13,6 +13,13 @@
     <li> It is made using HTML, CSS and Javascript and GSAP library is used for making animation</li>
     <li> <strong>Disclaimer : It's not yet Responsive, Apologies for the inconvinence caused</strong></li>
 </ol>
+<h2>Pending Issue Which needs to be corrected </h2>
+<ol>
+    <li>When website is not cached, website renders before the video resource</li>
+    <li>It is not responsive at all</li>
+    <li>When website is loaded initially sometimes nav bar comes in lower portion of screen in Safari, not observed in Google so far</li>
+</ol>
+
 <h2>Difficulties faced and Retrospective Actions </h2>
 <ol>
     <li>Understand the CSS postion , how does it work in case of mutliple nested HTML elements </li>
