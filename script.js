@@ -4,6 +4,14 @@ var cursor = document.querySelector("#cursor");
 var cursorBlur = document.querySelector("#cursor-blur");
 var navOptions = document.querySelectorAll("#nav h4");
 var elementBefore = CSSRulePlugin.getRule("#elem::before");
+var video = document.querySelector("video");
+
+console.log(video.readyState);
+
+video.addEventListener("loadeddata", () => {
+  console.log(video.readyState);
+  console.log("Ready State for video :" + video.readyState);
+});
 
 document.addEventListener("mousemove", (dets) => {
   cursor.style.left = dets.x + 30 + "px";
@@ -46,6 +54,8 @@ navOptions.forEach((element) => {
 // learn more about how web pages are rendered
 // one observation my scrollTrigger effect started
 // only after giving value of start key in scrollTrigger
+
+/* All GSAP animations written here */
 gsap.to("#nav", {
   backgroundColor: "#000",
   duration: 0.5,
